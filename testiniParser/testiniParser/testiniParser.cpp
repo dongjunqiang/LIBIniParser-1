@@ -5,12 +5,14 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	CIniParser iniParser;
-	iniParser.load("aspnet_state_perf.ini");
-	string value;
-	iniParser.GetValue("languages", "01D", value);
-	cout << value << endl;
+    CIniParser iniParser;
+    iniParser.load(".gitconfig");
+    string value;
+    iniParser.GetValue("difftool \"bc3\"", "cmd", value);
+    cout << value << endl;
 
-	return 0;
+    iniParser.Save();
+
+    return 0;
 }
 

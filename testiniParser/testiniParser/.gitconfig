@@ -1,0 +1,13 @@
+[user]
+	name = lihaitao_82@163.com
+	email = lihaitao_82@163.com
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	cmd = "\"C:\\Program Files (x86)\\Beyond Compare 3/BCompare.exe\" \"$LOCAL\" \"$REMOTE\""
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	cmd = "\"C:\\Program Files (x86)\\Beyond Compare 3/BCompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+	trustExitCode = true
+
